@@ -3,7 +3,7 @@ import ProductPages from './pages/ProductPages/ProductPages';
 
 function App() {
   return (
-    <div className='contenedor'>
+    <div className='container'>
 
       <header className='header'>
           <h2>Proveedor</h2>

@@ -1,3 +1,4 @@
+import { Modal } from '../Modal/Modal';
 import './Lista.css'
 import React, {  useState } from 'react'
 
@@ -7,6 +8,9 @@ export const Lista = () => {
         { id: 2, name: "Libreta", cantidad: 30 },
         { id: 3, name: "Goma de borrar", cantidad: 6 },
       ]);
+
+    const [modal, setModal] = useState(false);
+    const Toggle = () => setModal(!modal);
     
 
     const addProducto = () => {
@@ -22,7 +26,8 @@ export const Lista = () => {
         let name = prompt ('Añade un nombre');
         let cantidad = prompt ('Añade una cantidad');
         const copyArray = myArray.filter(list => list.id !== listId);
-        copyArray.push({ name: name, cantidad: cantidad})
+        let id = Date.now()
+        copyArray.push({id:id, name: name, cantidad: cantidad})
         setMyArray(copyArray)
     }
 
@@ -47,14 +52,15 @@ export const Lista = () => {
             
            
             <div>
-            <button className='boton'>Comentar</button>
+            <button className='boton clickme' onClick={() => Toggle()}>Comentar</button>
+            <Modal show={modal} close={Toggle}/>
             </div>
             
         </div>
 
         )}
         <div className='add-productos' onClick={addProducto}>
-            <img src='./assets/add30.png' alt='añadir'/>
+            <img src='./assets/add30.png' alt='añadir' className='add-img'/>
         </div>
     </div>
   )

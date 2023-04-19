@@ -43,5 +43,12 @@
     width: 100%;
     overflow: overlay;
     cursor: pointer;
-    height: 151px;
+    height: 141px;
+}
+
+.add-img{
+    transition: .5s transform;
+}
+.add-img:hover{
+    transform: rotate(360deg);
 }
