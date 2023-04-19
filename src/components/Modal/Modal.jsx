@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.scss"
+import { From } from "../Form/From";
 
 export const Modal = ({ show, close }) => {
   return (
@@ -15,13 +16,9 @@ export const Modal = ({ show, close }) => {
                 </button>
                 </header>
             
-            <main className="modal_content"> This is Modal Content </main>
-            
-            <footer className="modal_footer">
-              
-              <button className="modal-close" onClick={() => close()}> Cancel </button>
-              <button className="submit">Submit</button>
-            </footer>
+            <main className="modal_content"> 
+                <From/>
+            </main>
           </div>
         </div>
       ) : null}

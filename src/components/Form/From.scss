@@ -1,0 +1,27 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    &__input{
+        border: none;
+        width: 100%;
+        margin-bottom: 6px;
+        padding: 8px 0px;
+        background-color: #ebd0ae;
+    }
+    &__boton{
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        padding: 11px;
+        background-color: #dc8313;
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4.5px;
+    }
+    &__boton:hover{
+        background-color: #EE7B43;
+    }
+}
