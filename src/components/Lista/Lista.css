@@ -1,0 +1,47 @@
+.lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: flex-start;
+}
+.productos{
+    max-width: 230px;
+    width: 100%;
+}
+
+.cajita{
+    border: 2px solid #FDFFFC;
+    text-align: center;
+    padding: 20px 10px;
+    overflow: overlay;
+    margin-bottom: 17px;
+
+}
+
+.iconos{
+    display: flex;
+    justify-content: flex-end;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 7%;
+}
+
+.nombre-producto{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.add-productos{
+    border: 2px solid #FDFFFC;
+    text-align: center;
+    padding: 20px 10px;
+    max-width: 206px;
+    width: 100%;
+    overflow: overlay;
+    cursor: pointer;
+    height: 151px;
+}
